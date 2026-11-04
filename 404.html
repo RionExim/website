@@ -5,22 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page not found — Rionexim</title>
 <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=IBM+Plex+Sans:wght@400&display=swap">
 <style>
-  :root{--bg:#FCFBF9;--ink:#2A211B;--ink-2:#6E5F55;--copper:#8C4A21}
+  :root{--bg:#FCFBF9;--ink:#2A211B;--ink-2:#6E5F55;--copper:#8C4A21;--copper-mid:#A9611F;--copper-lt:#C9823C}
   *{box-sizing:border-box}
-  body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--bg);
-       color:var(--ink);font-family:'IBM Plex Sans','Segoe UI',system-ui,sans-serif;
-       padding:16px;text-align:center}
-  img{width:110px;height:auto;margin:0 auto 26px}
-  h1{font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-size:26px;margin:0 0 10px}
-  p{color:var(--ink-2);margin:0 0 26px;font-size:15px}
+  html,body{height:100%}
+  body{margin:0;display:grid;place-items:center;background:var(--bg);color:var(--ink);
+       font-family:'IBM Plex Sans','Segoe UI',system-ui,sans-serif;padding:24px 16px;text-align:center}
+  .mark{font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-size:22px;
+        letter-spacing:.1em;margin-bottom:30px;
+        background:linear-gradient(90deg,var(--copper),var(--copper-mid) 55%,var(--copper-lt));
+        -webkit-background-clip:text;background-clip:text;color:transparent}
+  h1{font-family:Archivo,'Helvetica Neue',Arial,sans-serif;font-size:clamp(22px,5vw,28px);margin:0 0 10px}
+  p{color:var(--ink-2);margin:0 0 28px;font-size:15px}
   a{display:inline-block;text-decoration:none;font-weight:600;font-size:14px;
-    padding:11px 20px;border-radius:2px;background:var(--copper);color:#fff}
+    padding:12px 22px;border-radius:2px;background:var(--copper);color:#fff}
+  a:hover{background:var(--copper-mid)}
 </style>
 </head>
 <body>
   <main>
-    <img src="/logo_lockup.png" alt="Rionexim">
+    <div class="mark">RIONEXIM</div>
     <h1>Page not found</h1>
     <p>That page does not exist on this site.</p>
     <a href="/">Return to homepage</a>

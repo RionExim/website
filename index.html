@@ -1,5 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+/* base reset — supplied by the artifact host, written out for the standalone build */
+:root{
+  color-scheme:light;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
 <title>Rionexim</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Rionex Exim Private Limited — import and export of copper, aluminium and brass scrap, specified to ISRI standards and priced on LME benchmarks.">
 <meta property="og:title" content="Rionexim — Non-Ferrous Metal Scrap Trading">
 <meta property="og:description" content="Import and export of copper, aluminium and brass scrap. ISRI graded, third-party inspected, LME referenced.">
@@ -13,13 +29,13 @@
 <meta name="twitter:image" content="https://rionexim.com/social-card.jpg">
 <link rel="canonical" href="https://rionexim.com/">
 <meta name="theme-color" content="#8C4A21">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -395,15 +411,7 @@ textarea{resize:vertical;min-height:96px}
 #enquiry.sending{opacity:.72;pointer-events:none}
 #f-submit[disabled]{opacity:.6;cursor:progress}
 
-/* ---------- compliance + footer ---------- */
-.compliance{background:var(--surface-2);border-block:1px solid var(--line)}
-.compliance-in{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
-@media (min-width:640px){.compliance-in{grid-template-columns:repeat(2,1fr)}}
-@media (min-width:980px){.compliance-in{grid-template-columns:repeat(4,1fr)}}
-.reg{background:var(--surface);padding:18px;min-width:0}
-.reg dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin-bottom:6px}
-.reg dd{margin:0;font-family:var(--mono);font-size:13px;word-break:break-all}
-
+/* ---------- footer ---------- */
 footer{background:var(--surface-2);color:var(--ink-2);border-top:1px solid var(--line);padding-block:40px;font-size:13.5px}
 .foot-grid{display:grid;gap:26px}
 @media (min-width:760px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
@@ -444,8 +452,8 @@ footer{background:var(--surface-2);color:var(--ink-2);border-top:1px solid var(-
 :root.anim .reveal-stagger.in>*:nth-child(n+10){transition-delay:.37s}
 
 /* ---------- soft relief + hover ---------- */
-.pillar,.step,.market,.grade,.std-item,.reg{transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .25s var(--ease)}
-.pillar:hover,.std-item:hover,.reg:hover{background:var(--bg)}
+.pillar,.step,.market,.grade,.std-item{transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .25s var(--ease)}
+.pillar:hover,.std-item:hover{background:var(--bg)}
 .grade:hover{background:var(--bg)}
 .step{position:relative}
 .step:hover,.market:hover{transform:translateY(-4px);box-shadow:var(--lift);z-index:2}
@@ -528,7 +536,8 @@ input:focus,select:focus,textarea:focus{
   .market:nth-child(2),.market:nth-child(3){transform:none!important}
 }
 </style>
-
+</head>
+<body>
 <nav class="nav">
   <div class="nav-in">
     <a class="brand" href="#top">
@@ -570,7 +579,7 @@ input:focus,select:focus,textarea:focus{
 <section class="stats">
   <div class="wrap stats-in">
     <dl class="stats-panel reveal-stagger">
-      <div class="stat"><dt>Incorporated</dt><dd>2026</dd></div>
+      <div class="stat"><dt>Incorporated</dt><dd>2025</dd></div>
       <div class="stat"><dt>Sourcing Markets</dt><dd>UAE · Georgia · Germany</dd></div>
       <div class="stat"><dt>Specification</dt><dd>ISRI Graded</dd></div>
     </dl>
@@ -588,7 +597,7 @@ input:focus,select:focus,textarea:focus{
 
     <div class="about-grid">
       <div class="about-copy reveal">
-        <p>Rionex Exim Private Limited is an international trading company dealing in ferrous and non-ferrous metal scrap, incorporated in Maharashtra in 2026 and operating from its facility at Pelhar, Vasai.</p>
+        <p>Rionex Exim Private Limited is an international trading company dealing in ferrous and non-ferrous metal scrap, incorporated in Maharashtra in 2025 and operating from its facility at Pelhar, Vasai.</p>
         <p>We trade in both directions — importing copper, aluminium and brass scrap from suppliers in the United Arab Emirates, Georgia and Germany for Indian rod mills, smelters and foundries, and exporting to processors abroad. In a trade where most disputes come down to loose grading, skipped inspections and paperwork that will not clear customs, we work to three fixed rules.</p>
 
         <div class="pillars reveal-stagger">
@@ -887,18 +896,6 @@ input:focus,select:focus,textarea:focus{
   </div>
 </section>
 
-<section class="band compliance">
-  <div class="wrap">
-    <p class="eyebrow">Statutory Registration</p>
-    <dl class="compliance-in reveal-stagger">
-      <div class="reg"><dt>Corporate Identity Number</dt><dd>U46620MH2025PTC460944</dd></div>
-      <div class="reg"><dt>Importer Exporter Code</dt><dd>AAPCR2194A</dd></div>
-      <div class="reg"><dt>GSTIN</dt><dd>27AAPCR2194A1ZB</dd></div>
-      <div class="reg"><dt>Incorporated</dt><dd>2026 &nbsp;·&nbsp; Maharashtra</dd></div>
-    </dl>
-  </div>
-</section>
-
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -1090,3 +1087,5 @@ input:focus,select:focus,textarea:focus{
   });
 })();
 </script>
+</body>
+</html>
