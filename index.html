@@ -923,7 +923,7 @@ input:focus,select:focus,textarea:focus{
       </div>
     </div>
     <div class="foot-base">
-      <span>&copy; 2026 Rionex Exim Private Limited. All rights reserved.</span>
+      <span>&copy; <span id="copyright-years">2025&ndash;2026</span> Rionex Exim Private Limited. All rights reserved.</span>
       <span>CIN U46620MH2025PTC460944</span>
     </div>
   </div>
@@ -1007,6 +1007,17 @@ input:focus,select:focus,textarea:focus{
       }
     });
   });
+
+  /* Copyright year: keeps itself current. The HTML carries a correct
+     fallback, so the line still reads properly if this never runs. */
+  (function(){
+    var FOUNDED = 2025;
+    var el = document.getElementById('copyright-years');
+    if (!el) return;
+    var now = new Date().getFullYear();
+    if (!(now > FOUNDED)) { el.textContent = String(FOUNDED); return; }
+    el.textContent = FOUNDED + '–' + now;
+  })();
 
   /* ------------------------------------------------------------------
      ENQUIRY FORM
